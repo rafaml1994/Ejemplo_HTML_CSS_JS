@@ -1,0 +1,82 @@
+body{
+    background-color: #fafafa;
+}
+#inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('imagenes/montañas.jpg');
+    background-repeat: none;
+    background-size: cover;
+    padding: 1rem;
+    height: 20rem;
+}
+#inicio button{
+    margin: 3rem;
+    height: 4rem;
+    width: 12rem;
+    text-transform: uppercase;
+}
+#mostrarConsulta{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .1s all;
+}
+#mostrarConsulta form{
+    width: 40rem;
+    margin: 1rem;
+    margin-top: 5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow:5px 5px 8px black; 
+    
+}
+#mostrarConsulta form button{
+    width: 100%;
+}
+#productos{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+/* Pedidos.html */
+
+
+
+#menu_pedidos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    background-image: url('imagenes/montañas.jpg');
+    background-size: cover;
+}
+#menu_pedidos a{
+    width: 10rem;
+}
+#pedidos{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.animation{
+    animation: mostrar 1s;
+}
+
+@keyframes mostrar {
+    0%{
+        transform: translateX(-10rem);
+    }
+    100%{
+        transform: translateX(0rem);
+    }
+}

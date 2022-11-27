@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejemplo_HTML_CSS_TS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <div id="inicio">
+        <h1>Bienvenido a nuestra aplicación</h1>
+        <h6>Aplicación de prueba con HTML, CSS y TypeScript</h6>
+        <button class="btn btn-outline-primary" id="showForm">Comenzar ahora
+    </div>
+    
+    <div id="mostrarConsulta">
+      <form id="formulario" onsubmit="mostrarAlerta(event)">
+        <fieldset>
+          <legend>Rellene los campos de su pedido</legend>
+          <label for="productos" class="form-label">Seleccione el producto</label>
+          <select id="productos" class="form-select">
+
+          </select>
+          <div class="mb-3 mt-2">
+            <input type="text" id="input" class="form-control" value="0" placeholder="Introduce cantidad">
+          </div>
+          <div class="mb-3">
+
+          </div>
+          <button type="submit" class="btn btn-outline-success">Confirmar pedido</button>
+        </fieldset>
+      </form>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
